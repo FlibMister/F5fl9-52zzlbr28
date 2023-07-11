@@ -1,5 +1,4 @@
 
-
 var yeet = [
 	"https://www.snay.io/assets/skins/Premium/1676821156265.png",
 	"https://www.snay.io/assets/skins/Premium/1678485131495.png",
@@ -160,7 +159,8 @@ var blibl = [
 	"64029dd8532ddde9cdb20536", // Smokey
 	"6209de50e8af7419d46f051e", // Trig
 	"640ed012333278927ce6570e", // Angel
-	"648c3b1e731331fde3a48807" // Tomic
+	"6276b8e719c2a8af9c4bd33f" // Tomic
+
 
 ]
 
