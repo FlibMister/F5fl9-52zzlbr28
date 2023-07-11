@@ -10,7 +10,7 @@ var yeet = [
 ]
 
 
-var rareSkins = [
+var cribl = [
 
 "https://www.snay.io/assets/skins/Premium/1687686766864.png",
 "https://www.snay.io/assets/skins/vani.png",
@@ -150,7 +150,7 @@ var rareSkins = [
 "https://www.snay.io/assets/skins/virus-image.png"
 ]
 
-var authMembers = [
+var blibl = [
     "630b647c0ab03b72b8fc3ef3", // Me
    "62abbd0614799f94e6979d0e", // GravityG & Mary
 	"6211f27de8af7419d46fba57", // Terror
@@ -166,7 +166,7 @@ var authMembers = [
 
 if (localStorage.getItem("gangsta")){
 	  for (let i = 0; i<yeet.length; i++){
-		  rareSkins.push(yeet[i]);
+		  cribl.push(yeet[i]);
 
 	  }
 	}
@@ -177,11 +177,11 @@ if (localStorage.getItem("gangsta")){
 			const isLoggedIn = document.querySelector("#profile-btn.fade-in") !== null;
 			if (isLoggedIn) {
 				setTimeout(()=>{if (!document.querySelector(".emojiBindTitle")){
-				var accID = document.querySelector("#account-content").querySelectorAll("span")[2].innerText;
+				var oka = document.querySelector("#account-content").querySelectorAll("span")[2].innerText;
 				if (localStorage.getItem("auth")){
 
-					if (accID == authMembers[0] || accID == authMembers[1] || accID == authMembers[2] || accID == authMembers[3] || accID == authMembers[4] || accID == authMembers[5] || accID == authMembers[6] || accID == authMembers[7]){
-					for (let i = 0; i<rareSkins.length; i++){
+					if (oka == blibl[0] || oka == blibl[1] || oka == blibl[2] || oka == blibl[3] || oka == blibl[4] || oka == blibl[5] || oka == blibl[6] || oka == blibl[7]){
+					for (let i = 0; i<cribl.length; i++){
 						var lin = document.createElement("li");
 						lin.classList.add("skin");
 						var spanf = document.createElement("span");
@@ -190,19 +190,20 @@ if (localStorage.getItem("gangsta")){
 						lin.appendChild(spanf);
 						lin.classList.add("L4");
 
-						var goodSkin = document.createElement("img");
-						goodSkin.src = rareSkins[i];
-						goodSkin.style.height = "150px";
-						goodSkin.style.width = "150px";
-						goodSkin.style.margin = "5px";
-						goodSkin.classList.add("circular");
-						spanf.append(goodSkin);
-						goodSkin.setAttribute("alt", rareSkins[i].split(".")[rareSkins[i].split(".").length-2].split("/")[rareSkins[i].split(".")[rareSkins[i].split(".").length-2].split("/").length-1]);
-						if (rareSkins[i].split(".")[rareSkins[i].split(".").length-2].split("/")[rareSkins[i].split(".")[rareSkins[i].split(".").length-2].split("/").length-1] == "matter"){
-							goodSkin.style.backgroundColor = "gray";
+						var sklib = document.createElement("img");
+						sklib.src = cribl[i];
+						sklib.style.height = "150px";
+						sklib.style.width = "150px";
+						sklib.style.margin = "5px";
+						sklib.classList.add("circular");
+						spanf.append(sklib);
+						sklib.setAttribute("alt", cribl[i].split(".")[cribl[i].split(".").length-2].split("/")[cribl[i].split(".")[cribl[i].split(".").length-2].split("/").length-1]);
+						if (cribl[i].split(".")[cribl[i].split(".").length-2].split("/")[cribl[i].split(".")[cribl[i].split(".").length-2].split("/").length-1] == "matter"){
+							sklib.style.backgroundColor = "gray";
 						}
-						goodSkin.onclick = ()=>{
-							changeSkin(rareSkins[i].split(".")[rareSkins[i].split(".").length-2].split("/")[rareSkins[i].split(".")[rareSkins[i].split(".").length-2].split("/").length-1]);
+						sklib.onclick = ()=>{
+							var name = cribl[i].split(".")[cribl[i].split(".").length-2].split("/")[cribl[i].split(".")[cribl[i].split(".").length-2].split("/").length-1]
+							changeSkin(name);
 						}
 						document.querySelector("label[for='own']").nextElementSibling.firstChild.append(lin);
 					}
