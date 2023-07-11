@@ -1,5 +1,4 @@
 
-
 var yeet = [
 	"https://www.snay.io/assets/skins/Premium/1676821156265.png",
 	"https://www.snay.io/assets/skins/Premium/1678485131495.png",
@@ -176,7 +175,7 @@ if (localStorage.getItem("gangsta")){
 		  const observer = new MutationObserver(function () {
 			const isLoggedIn = document.querySelector("#profile-btn.fade-in") !== null;
 			if (isLoggedIn) {
-				setTimeout(()=>{if (!document.querySelector(".emojiBindTitle")){
+				setTimeout(()=>{
 				var oka = document.querySelector("#account-content").querySelectorAll("span")[2].innerText;
 				if (localStorage.getItem("auth")){
 
@@ -223,14 +222,8 @@ if (localStorage.getItem("gangsta")){
 							*/
 							//localStorage.removeItem("token");
 							//localStorage.removeItem("extras");
-				} else {
-					if (document.querySelector("#account-content").querySelectorAll("span")[2].innerText == "6209de50e8af7419d46f051e"){
-						localStorage.setItem("auth", "1");
-                         localStorage.setItem("gangsta", "1");
-					}
 				}
 
-			}
 				}, 5000);
 			} else {
 				if (document.querySelectorAll(".L4")){
