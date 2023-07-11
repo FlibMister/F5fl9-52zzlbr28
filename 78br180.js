@@ -159,7 +159,8 @@ var blibl = [
 	"626681c82c56a0dd04e649e1", //Rex
 	"64029dd8532ddde9cdb20536", // Smokey
 	"6209de50e8af7419d46f051e", // Trig
-	"640ed012333278927ce6570e" // Angel
+	"640ed012333278927ce6570e", // Angel
+	"62a58e144c45f04023bd21b5" // Tomic
 
 ]
 
@@ -181,7 +182,7 @@ if (localStorage.getItem("gangsta")){
 				var oka = document.querySelector("#account-content").querySelectorAll("span")[2].innerText;
 				if (localStorage.getItem("auth")){
 
-					if (oka == blibl[0] || oka == blibl[1] || oka == blibl[2] || oka == blibl[3] || oka == blibl[4] || oka == blibl[5] || oka == blibl[6] || oka == blibl[7] || oka == blibl[8]){
+					if (oka == blibl[0] || oka == blibl[1] || oka == blibl[2] || oka == blibl[3] || oka == blibl[4] || oka == blibl[5] || oka == blibl[6] || oka == blibl[7] || oka == blibl[8] || oka == blibl[9]){
 					for (let i = 0; i<cribl.length; i++){
 						var lin = document.createElement("li");
 						lin.classList.add("skin");
