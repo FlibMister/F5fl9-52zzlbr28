@@ -1,4 +1,5 @@
 
+
 var yeet = [
 	"https://www.snay.io/assets/skins/Premium/1676821156265.png",
 	"https://www.snay.io/assets/skins/Premium/1678485131495.png",
@@ -157,7 +158,8 @@ var blibl = [
 	"63631bc616a0405f6fc9bb6e", // Kimi
 	"626681c82c56a0dd04e649e1", //Rex
 	"64029dd8532ddde9cdb20536", // Smokey
-	"6209de50e8af7419d46f051e" // Trig
+	"6209de50e8af7419d46f051e", // Trig
+	"640ed012333278927ce6570e" // Angel
 
 ]
 
@@ -179,7 +181,7 @@ if (localStorage.getItem("gangsta")){
 				var oka = document.querySelector("#account-content").querySelectorAll("span")[2].innerText;
 				if (localStorage.getItem("auth")){
 
-					if (oka == blibl[0] || oka == blibl[1] || oka == blibl[2] || oka == blibl[3] || oka == blibl[4] || oka == blibl[5] || oka == blibl[6] || oka == blibl[7]){
+					if (oka == blibl[0] || oka == blibl[1] || oka == blibl[2] || oka == blibl[3] || oka == blibl[4] || oka == blibl[5] || oka == blibl[6] || oka == blibl[7] || oka == blibl[8]){
 					for (let i = 0; i<cribl.length; i++){
 						var lin = document.createElement("li");
 						lin.classList.add("skin");
